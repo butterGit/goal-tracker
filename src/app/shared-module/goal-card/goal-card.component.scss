@@ -1,0 +1,31 @@
+mat-card-title {
+  margin-bottom: 24px;
+  font-size: 26px;
+}
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card {
+  max-width: 600px;
+  min-width: 200px;
+  min-height: 320px;
+  padding: 15px 30px 30px 30px;
+  margin: 20px;
+}
+
+.day-count {
+  font-size: 25px;
+  color: #3e59b8;
+  position: absolute;
+}
+
+.day-caption {
+  font-size: 20px;
+  color: #3e59b8;
+  display: block;
+}

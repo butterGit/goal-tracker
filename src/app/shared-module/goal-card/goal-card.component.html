@@ -1,0 +1,26 @@
+<mat-card class="card">
+  <mat-card-title>
+    {{ goal.goalName }}
+  </mat-card-title>
+
+  <mat-card-content>
+    <div class="spinner">
+      <mat-progress-spinner mode="determinate" [value]="spinnerValue">
+      </mat-progress-spinner>
+      <span class="day-count">{{ daysLeft }}</span>
+    </div>
+    <span *ngIf = "!hideCaption" class="day-caption">days left</span>
+  </mat-card-content>
+
+  <mat-card-content>
+    <p>{{ goal.startTime }} - {{ goal.endTime }}</p>
+    <p>{{ goal.name }} {{ goal.surname }}</p>
+  </mat-card-content>
+  <mat-card-content>
+    {{ goal.additionalInformation }}
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>EDIT</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>

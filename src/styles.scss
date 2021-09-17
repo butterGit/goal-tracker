@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+mat-icon, fa-icon {
+  cursor: pointer;
+}
+
+.navbar {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+  color: #3e59b8;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 0;
+    fa-icon{
+      margin: 0 5px;
+    }
+}
+
+@media (min-width: 576px) {
+  .footer {
+    position: fixed;
+  }
+}

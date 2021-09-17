@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "goal-tracker-14f42": {
+      "hosting": {
+        "goal-tracker": [
+          "goal-tracker-14f42"
+        ]
+      }
+    }
+  }
+}
