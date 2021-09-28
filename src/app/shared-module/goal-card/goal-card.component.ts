@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+
 import { Goal } from '../../models/goal.model';
 
 @Component({
@@ -14,8 +15,7 @@ export class GoalCardComponent implements OnInit {
   spinnerValue: number = 0;
   hideCaption: boolean = false;
 
-
-
+  constructor() {}
 
   ngOnInit(): void {
     if (this.countDaysLeft() <= 0) {

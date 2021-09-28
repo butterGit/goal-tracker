@@ -9,17 +9,16 @@ import {MatDialogConfig, MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS} from '@ang
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule,} from '@angular/material/icon';
-import { MatCheckboxModule} from '@angular/material/checkbox';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDatepickerModule, } from '@angular/material/datepicker';
 import {MatNativeDateModule, MatRippleModule} from '@angular/material/core';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 
 const MAT_DIALOG_CONFIG : MatDialogConfig = {
-  width: '700px',
-  disableClose: true,
   hasBackdrop: true,
 }
 const MAT_SNACK_BAR_CONFIG : MatSnackBarConfig = {
@@ -42,8 +41,8 @@ const MATERIAL_MODULES = [
   MatDatepickerModule,
   MatNativeDateModule,
   MatRippleModule,
-  MatProgressSpinnerModule
-
+  MatProgressSpinnerModule,
+  MatRadioModule
 ]
 
 

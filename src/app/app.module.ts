@@ -4,18 +4,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import { DashboardComponent } from './shared-module/dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from 'src/environments/environment';
 import { MaterialModule } from './material/material.module';
 import { SharedModule } from './shared-module/shared.module';
+import { CoreModule } from './core/core.module';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
+    DashboardComponent,
+    HomeComponent,
 
   ],
   imports: [
@@ -26,6 +35,8 @@ import { SharedModule } from './shared-module/shared.module';
     AngularFireDatabaseModule,
     MaterialModule,
     SharedModule,
+    CoreModule,
+    FormsModule,
 
   ],
   providers: [],

@@ -3,7 +3,8 @@ export interface Goal {
   goalName: string,
   startTime: string;
   endTime: string;
-  name: string;
-  surname: string;
+  author: string;
+  userId: string;
+  privacy: string;
   additionalInformation: string;
 }

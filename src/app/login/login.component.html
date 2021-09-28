@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="login-container">
+    <h1>Login or register</h1>
+    <div class="img-container">
+      <img class=image src="assets/login-icon.png" alt="">
+    </div>
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input type = "email" matInput placeholder="pat@example.com" required [(ngModel)]="user.email">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your passoword</mat-label>
+      <input type="password" matInput placeholder="jankowalski@example.com" required [(ngModel)]="user.password">
+    </mat-form-field>
+    <div class="button-container">
+      <button id = "login-button" mat-raised-button color="primary" (click)="login()">LOG IN</button>
+      <button mat-raised-button color="accent" (click) = "register()">REGISTER</button>
+    </div>
+
+  </div>
+</div>

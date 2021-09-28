@@ -1,0 +1,10 @@
+<div class="dialog">
+  <h1 mat-dialog-title>Add New Goal!</h1>
+  <mat-dialog-content>
+    <app-goal-form #goalForm></app-goal-form>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" (click)="addGoal()">Create</button>
+  </mat-dialog-actions>
+</div>

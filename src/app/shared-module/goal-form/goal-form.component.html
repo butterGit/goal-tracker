@@ -1,0 +1,29 @@
+<form action="" [formGroup]="form">
+  <mat-form-field appearance="fill">
+    <mat-label>Goal Name</mat-label>
+    <input matInput formControlName="goalName">
+    <mat-error *ngIf="form.controls['goalName'].errors?.required">Code is required</mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Start Time</mat-label>
+    <input formControlName="startTime" matInput [matDatepicker]="pickerStartTime">
+    <mat-datepicker-toggle matSuffix [for]="pickerStartTime"></mat-datepicker-toggle>
+    <mat-datepicker #pickerStartTime></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>End Time</mat-label>
+    <input formControlName="endTime" matInput [matDatepicker]="pickerEndTime">
+    <mat-datepicker-toggle matSuffix [for]="pickerEndTime"></mat-datepicker-toggle>
+    <mat-datepicker #pickerEndTime></mat-datepicker>
+  </mat-form-field>
+  <mat-radio-group formControlName="privacy">
+      <mat-label>Choosee visibility:</mat-label>
+      <mat-radio-button value="public">Public</mat-radio-button>
+      <mat-radio-button value="private">Private</mat-radio-button>
+  </mat-radio-group>
+  <mat-form-field appearance="fill">
+    <mat-label>Additional Information</mat-label>
+    <textarea formControlName="additionalInformation" matInput></textarea>
+  </mat-form-field>
+
+</form>
