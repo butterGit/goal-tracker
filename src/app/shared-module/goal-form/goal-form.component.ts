@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { FormGroup, FormBuilder, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-goal-form',
   templateUrl: './goal-form.component.html',
-  styleUrls: ['./goal-form.component.scss']
+  styleUrls: ['./goal-form.component.scss'],
 })
 export class GoalFormComponent implements OnInit {
   form!: FormGroup;

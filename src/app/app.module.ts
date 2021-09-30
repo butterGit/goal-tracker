@@ -15,6 +15,8 @@ import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { EditGoalComponent } from './edit-goal/edit-goal.component';
+import { GoalComponent } from './goal/goal.component';
 
 
 
@@ -25,6 +27,8 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     DashboardComponent,
     HomeComponent,
+    EditGoalComponent,
+    GoalComponent,
 
   ],
   imports: [

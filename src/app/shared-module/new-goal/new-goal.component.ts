@@ -10,14 +10,14 @@ import { GoalFormComponent } from '../goal-form/goal-form.component';
   styleUrls: ['./new-goal.component.scss']
 })
 export class NewGoalComponent{
-  @ViewChild('goalForm') flightForm!: GoalFormComponent;
+  @ViewChild('goalForm') goalForm!: GoalFormComponent;
   goal!: Goal;
 
   constructor(private goalService: GoalService, private authService: AuthService) {
   }
 
   addGoal() {
-    this.goal = this.flightForm.form.value;
+    this.goal = this.goalForm.form.value;
     this.goal.userId = this.authService.userData.uid;
     this.goal.author = this.authService.userData.email;
     //The "g" after the regular expression is an option or flag that performs a global search, looking in the whole string and returning all matches.

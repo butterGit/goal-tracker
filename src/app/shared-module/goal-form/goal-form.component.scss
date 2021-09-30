@@ -13,3 +13,15 @@ mat-radio-group {
     display: block;
   }
 }
+
+mat-form-field {
+  min-width: 250px;
+}
+
+:host.edit-form {
+  @media (min-width: 576px) {
+    mat-form-field {
+      min-width: 500px;
+    }
+  }
+}

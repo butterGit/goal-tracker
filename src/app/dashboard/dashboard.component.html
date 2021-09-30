@@ -1,14 +1,6 @@
 <app-navbar></app-navbar>
-<div class="container">
-  <div class="card-container">
-    <div *ngFor="let goal of goals | async">
-      <app-goal-card [goal]="goal"></app-goal-card>
-    </div>
-  </div>
-</div>
-<button id = "addButton" (click) = "openGoalForm()" mat-fab color="primary">
-  <mat-icon>exposure_plus_1</mat-icon>
-</button>
+
+<router-outlet></router-outlet>
 
 <mat-toolbar class="footer">
   <fa-icon [icon]="facebookIcon"></fa-icon>

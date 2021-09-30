@@ -32,6 +32,12 @@ export class AuthService {
   }
 
   isLoggedIn() {
-    return !!this.userData;
+    this.fireAuth.authState.subscribe(res => {
+      if (res && res.uid) {
+        console.log('user is logged in');
+      } else {
+        console.log('user not logged in');
+      }
+    });
   }
 }

@@ -9,12 +9,8 @@ import { AuthService } from 'src/app/core/services/auth.service';
 })
 export class NavbarComponent{
 
-  user! : string;
-
   constructor(private authService: AuthService,
-    private router: Router) {
-      this.user = this.authService.userData.email;
-    }
+    private router: Router) {}
 
   logout() {
     this.authService.logout().then(() => {
