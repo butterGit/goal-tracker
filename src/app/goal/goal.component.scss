@@ -26,3 +26,38 @@
   bottom: 10vh;
 }
 
+//separator
+
+.separator {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 1rem;
+}
+
+.separator > span {
+  position: relative;
+  display: inline-block;
+}
+
+.separator > span:before,
+.separator > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: #3f51b5;
+}
+
+.separator > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.separator > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+

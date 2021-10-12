@@ -5,6 +5,8 @@ import {
   faGithubSquare,
 } from '@fortawesome/free-brands-svg-icons';
 
+
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -14,4 +16,5 @@ export class DashboardComponent {
   facebookIcon = faFacebook;
   linkedinnIcon = faLinkedin;
   githubIcon = faGithubSquare;
+
 }

@@ -1,6 +1,7 @@
 <mat-card class="card">
-  <mat-card-title>
-    {{ goal.goalName }}
+  <mat-card-title class = "title-container">
+    <span id = "goalName">{{ goal.goalName }}</span>
+    <fa-icon (click) = "removeGoal($event)" id="removeButton" [icon]="closeIcon"></fa-icon>
   </mat-card-title>
 
   <mat-card-content>

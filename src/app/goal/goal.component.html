@@ -1,11 +1,28 @@
-
 <div class="container">
+  <div class="separator">
+    <span>
+      <h2>Your Goals:</h2>
+      <h3>See your goals and progress</h3>
+    </span>
+  </div>
   <div class="card-container">
-    <div *ngFor="let goal of goals | async">
-      <app-goal-card (click) = "goToEditFlights(goal)" [goal]="goal"></app-goal-card>
+
+    <div *ngFor="let goal of yourGoals | async">
+      <app-goal-card (click)="goToEditFlights(goal)" [goal]="goal"></app-goal-card>
+    </div>
+  </div>
+  <div class="separator">
+    <span>
+      <h2>Public Goals:</h2>
+      <h3>See other people goals and progress</h3>
+    </span>
+  </div>
+  <div class="card-container">
+    <div *ngFor="let goal of publicGoals | async">
+      <app-goal-card [goal]="goal"></app-goal-card>
     </div>
   </div>
 </div>
-<button id = "addButton" (click) = "openGoalForm()" mat-fab color="primary">
+<button id="addButton" (click)="openGoalForm()" mat-fab color="primary">
   <mat-icon>exposure_plus_1</mat-icon>
 </button>

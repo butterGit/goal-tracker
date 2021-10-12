@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import {faTimes} from '@fortawesome/free-solid-svg-icons'
+import { GoalService } from 'src/app/core/services/goal.service';
 
 import { Goal } from '../../models/goal.model';
 
@@ -8,14 +10,14 @@ import { Goal } from '../../models/goal.model';
   styleUrls: ['./goal-card.component.scss']
 })
 export class GoalCardComponent implements OnInit {
-
+  closeIcon = faTimes;
   @Input() goal!: Goal;
   goalDuration! : number;
   daysLeft! : any;
   spinnerValue: number = 0;
   hideCaption: boolean = false;
 
-  constructor() {}
+  constructor(private goalService : GoalService) {}
 
   ngOnInit(): void {
     if (this.countDaysLeft() <= 0) {
@@ -27,6 +29,11 @@ export class GoalCardComponent implements OnInit {
       this.spinnerValue = this.countSpinnerValue();
     }
 
+  }
+
+  removeGoal(e:Event){
+    e.stopPropagation()
+    this.goalService.removeGoal(this.goal.id );
   }
 
   countSpinnerValue(): number {

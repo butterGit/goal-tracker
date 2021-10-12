@@ -35,4 +35,8 @@ export class GoalService {
     return this.db.object<Goal>(`goals/${id}`).update(goal);
   }
 
+  removeGoal(id: number) {
+    return this.db.object<Goal>(`goals/${id}`).remove();
+  }
+
 }
