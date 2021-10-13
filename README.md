@@ -1,4 +1,6 @@
-This project alows you to see and track yours and friends goals easily.
+This project allows you to see and track yours and friends goals easily.
+
+Try demo at: https://buttergit.github.io/goal-tracker
 
 # GoalTracker
 

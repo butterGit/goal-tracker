@@ -8,7 +8,7 @@
   <div class="card-container">
 
     <div *ngFor="let goal of yourGoals | async">
-      <app-goal-card (click)="goToEditFlights(goal)" [goal]="goal"></app-goal-card>
+      <app-goal-card class="add-pointer" (click)="goToEditFlights(goal)" [goal]="goal"></app-goal-card>
     </div>
   </div>
   <div class="separator">
