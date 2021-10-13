@@ -19,7 +19,7 @@ export class GoalService {
     return this.db.list<Goal[]>('goals').snapshotChanges().pipe(map((response: any) => response.map((goal: Goal) => this.assignKey(goal))));
   }
 
-  getGoal(id: number): Observable<Goal> {
+  getGoal(id: string): Observable<Goal> {
     return this.db.object<Goal>(`goals/${id}`).snapshotChanges().pipe(map(goal => this.assignKey(goal)));
   }
 
@@ -31,11 +31,11 @@ export class GoalService {
     return { ...goal.payload.val(), id: goal.key }
   }
 
-  editGoal(id: number, goal: Goal) {
+  editGoal(id: string, goal: Goal) {
     return this.db.object<Goal>(`goals/${id}`).update(goal);
   }
 
-  removeGoal(id: number) {
+  removeGoal(id: string) {
     return this.db.object<Goal>(`goals/${id}`).remove();
   }
 

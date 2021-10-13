@@ -21,7 +21,9 @@
     {{ goal.additionalInformation }}
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>EDIT</button>
-    <button mat-button>SHARE</button>
+    <button (click) = "addLike($event)" mat-button>LIKE
+      <fa-icon id = "likeIcon" [icon]="likeIcon"></fa-icon>
+      {{likesNumber}}</button>
+    <button (click) = "share($event)" mat-button>SHARE</button>
   </mat-card-actions>
 </mat-card>

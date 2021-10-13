@@ -15,7 +15,7 @@ import { GoalFormComponent } from '../shared-module/goal-form/goal-form.componen
 export class EditGoalComponent implements OnInit {
   @ViewChild('goalForm') goalForm!: GoalFormComponent;
   goal!: Goal;
-  id! : number;
+  id! : string;
 
 
   constructor(
