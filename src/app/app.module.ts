@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { EditGoalComponent } from './edit-goal/edit-goal.component';
 import { GoalComponent } from './goal/goal.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -29,6 +30,7 @@ import { GoalComponent } from './goal/goal.component';
     HomeComponent,
     EditGoalComponent,
     GoalComponent,
+    PageNotFoundComponent,
 
   ],
   imports: [
