@@ -10,6 +10,7 @@ import { AuthService } from '../core/services/auth.service';
 })
 export class LoginComponent{
 
+
   user =  {
     email: '',
     password: '',
@@ -28,7 +29,6 @@ export class LoginComponent{
     this.authService.register(this.user).then(() => this.toast.open("Account succeesfully registered. Please login"))
     .catch(err => this.toast.open(err.message));
   }
-
 
 
 }
