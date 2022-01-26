@@ -11,9 +11,10 @@ export class NavbarComponent{
 
   user!: string;
 
+
   constructor(private authService: AuthService,
     private router: Router) {
-      this.user = this.authService.userData.email;
+      this.user = this.authService.userData?.email || 'nologin@test.mail';
     }
 
   logout() {

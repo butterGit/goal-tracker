@@ -26,7 +26,8 @@ export class GoalComponent {
     private router: Router,
     private authService: AuthService
   ) {
-    this.id = this.authService.userData.uid;
+
+    this.id = this.authService.userData.uid ;
     this.groupGoals();
   }
 

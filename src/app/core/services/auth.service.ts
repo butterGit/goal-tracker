@@ -21,6 +21,11 @@ export class AuthService {
       .then(userCredential => this.userData = userCredential.user);
   }
 
+  testLogin() {
+    return this.fireAuth.signInWithEmailAndPassword('nologin@test.mail', 'qwerty')
+      .then(userCredential => this.userData = userCredential.user);
+  }
+
   register(user: User) {
     return this.fireAuth.createUserWithEmailAndPassword(user.email, user.password)
   }
