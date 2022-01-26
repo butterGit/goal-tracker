@@ -19,8 +19,14 @@ Try demo at: https://buttergit.github.io/goal-tracker
 
 This project allows you to see and track yours and friends goals easily. 
 
+<<<<<<< HEAD
 This project was generated with [Angular CLI] version 12.2.2.
 Try it at https://github.com/angular/angular-cli 
+=======
+Try it online at https://buttergit.github.io/goal-tracker
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+>>>>>>> 3a4591f (readme change)
 
 ## Development server
 
